@@ -7,114 +7,186 @@ data class CategoryGroup(
 
 val incomeCategoryGroups = listOf(
     CategoryGroup(
-        name = "Lương & Trợ cấp (Salary & Allowance)**",
+        name = "Salary & Allowance",
         subCategories = listOf(
-            "Lương chính (Salary)",
-            "Tiền làm thêm giờ (Overtime)",
-            "Phụ cấp / Trợ cấp (Allowance)"
+            "Salary",
+            "Overtime",
+            "Allowance"
         )
     ),
     CategoryGroup(
-        name = "Thưởng & Hoa hồng (Bonus & Commission)",
+        name = "Bonus & Commission",
         subCategories = listOf(
-            "Thưởng tháng / Quý / Năm (Bonus)",
-            "Hoa hồng doanh thu (Commission)"
+            "Monthly / Quarterly / Annual Bonus",
+            "Sales Commission"
         )
     ),
     CategoryGroup(
-        name = "Làm ngoài & Kinh doanh (Side Hustle & Business)**",
+        name = "Side Hustle & Business",
         subCategories = listOf(
-            "Tiền dự án / Freelance (Freelance/Gig)",
-            "Lợi nhuận kinh doanh (Business Income)",
-            "Bán đồ cũ / Thanh lý (Selling items)"
+            "Freelance / Project Income",
+            "Business Income",
+            "Selling Used Items"
         )
     ),
     CategoryGroup(
-        name = "Đầu tư & Tài sản (Investment & Assets)",
+        name = "Investment & Assets",
         subCategories = listOf(
-            "Lãi ngân hàng / Lãi tiết kiệm (Interest)",
-            "Cổ tức / Crypto / Stocks (Dividends / Crypto / Stocks)",
-            "Tiền cho thuê (Rental Income)"
+            "Bank Interest / Savings Interest",
+            "Dividends / Crypto / Stocks",
+            "Rental Income"
         )
     ),
     CategoryGroup(
-        name = "Nguồn thu khác (Others)",
+        name = "Other Income",
         subCategories = listOf(
-            "Được cho / Tặng / Lì xì (Gifts)",
-            "Tiền hoàn trả (Refunds)",
-            "Thu nhập khác (Other Income)"
+            "Gifts",
+            "Refunds",
+            "Other Income"
         )
     )
 )
 
 val expenseCategoryGroups = listOf(
     CategoryGroup(
-        name = "Ăn uống",
+        name = "Food & Drinks",
         subCategories = listOf(
-            "Ăn sáng",
-            "Ăn trưa",
-            "Ăn tối",
-            "Cà phê / Trà sữa",
-            "Đồ ăn vặt",
-            "Đặt đồ ăn"
+            "Breakfast",
+            "Lunch",
+            "Dinner",
+            "Coffee / Milk Tea",
+            "Snacks",
+            "Food Delivery"
         )
     ),
     CategoryGroup(
-        name = "Di chuyển",
+        name = "Transportation",
         subCategories = listOf(
-            "Xăng xe",
-            "Gửi xe",
+            "Fuel",
+            "Parking",
             "Grab / Taxi",
-            "Vé xe buýt",
-            "Bảo dưỡng xe"
+            "Bus Ticket",
+            "Vehicle Maintenance"
         )
     ),
     CategoryGroup(
-        name = "Mua sắm",
+        name = "Shopping",
         subCategories = listOf(
-            "Quần áo",
-            "Mỹ phẩm",
-            "Đồ công nghệ",
-            "Đồ dùng cá nhân",
-            "Đồ gia dụng"
+            "Clothes",
+            "Cosmetics",
+            "Technology",
+            "Personal Items",
+            "Household Items"
         )
     ),
     CategoryGroup(
-        name = "Hóa đơn & Sinh hoạt",
+        name = "Bills & Living",
         subCategories = listOf(
-            "Tiền điện",
-            "Tiền nước",
+            "Electricity Bill",
+            "Water Bill",
             "Internet",
-            "Điện thoại",
-            "Tiền thuê nhà"
+            "Phone Bill",
+            "Rent"
         )
     ),
     CategoryGroup(
-        name = "Giải trí",
+        name = "Entertainment",
         subCategories = listOf(
-            "Xem phim",
-            "Game",
-            "Du lịch",
-            "Đi chơi",
+            "Movies",
+            "Games",
+            "Travel",
+            "Going Out",
             "Subscription"
         )
     ),
     CategoryGroup(
-        name = "Sức khỏe & Giáo dục",
+        name = "Health & Education",
         subCategories = listOf(
-            "Thuốc men",
-            "Khám bệnh",
-            "Học phí",
-            "Sách / Tài liệu",
-            "Khóa học"
+            "Medicine",
+            "Medical Checkup",
+            "Tuition Fee",
+            "Books / Materials",
+            "Courses"
         )
     ),
     CategoryGroup(
-        name = "Khác",
+        name = "Others",
         subCategories = listOf(
-            "Quà tặng",
-            "Từ thiện",
-            "Phát sinh khác"
+            "Gifts",
+            "Charity",
+            "Other Expenses"
+        )
+    )
+)
+
+val scheduledCategoryGroups = listOf(
+    CategoryGroup(
+        name = "Housing & Regular Bills",
+        subCategories = listOf(
+            "Rent",
+            "Electricity Bill",
+            "Water Bill",
+            "Internet",
+            "Phone Bill",
+            "Apartment / Service Fee"
+        )
+    ),
+    CategoryGroup(
+        name = "Subscriptions & Digital Services",
+        subCategories = listOf(
+            "Netflix / Spotify / YouTube",
+            "Cloud Storage",
+            "App Subscription",
+            "Game Subscription",
+            "Study / Work Software"
+        )
+    ),
+    CategoryGroup(
+        name = "Study & Work",
+        subCategories = listOf(
+            "Tuition Fee",
+            "Recurring Course Fee",
+            "Books / Materials",
+            "Work Tools",
+            "Exam / Certificate Fee"
+        )
+    ),
+    CategoryGroup(
+        name = "Health & Insurance",
+        subCategories = listOf(
+            "Health Insurance",
+            "Vehicle Insurance",
+            "Personal Insurance",
+            "Regular Medical Checkup",
+            "Regular Medicine"
+        )
+    ),
+    CategoryGroup(
+        name = "Regular Transportation",
+        subCategories = listOf(
+            "Monthly Bus Pass",
+            "Monthly Parking Fee",
+            "Regular Vehicle Maintenance",
+            "Estimated Fuel Cost"
+        )
+    ),
+    CategoryGroup(
+        name = "Personal Finance",
+        subCategories = listOf(
+            "Installment Payment",
+            "Debt Repayment",
+            "Bank Fee",
+            "Recurring Savings",
+            "Recurring Investment"
+        )
+    ),
+    CategoryGroup(
+        name = "Others",
+        subCategories = listOf(
+            "Other Scheduled Expense",
+            "Family",
+            "Pet Care",
+            "Other Recurring Cost"
         )
     )
 )

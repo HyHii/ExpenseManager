@@ -23,7 +23,3 @@ fun formatDateTime(timestamp: Long): String {
     val sdf = SimpleDateFormat("dd/MM/yy HH:mm:ss", Locale.getDefault())
     return sdf.format(Date(timestamp))
 }
-
-fun formatCurrency(amount: Double): String {
-    return "%,.0f VND".format(amount)
-}
